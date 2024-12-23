@@ -9,7 +9,7 @@ import {userMiddleware} from "./middleware";
 const app=express();
 app.use(express.json());//middleware we expecting in body we have json data 
 
-mongoose.connect('mongodb+srv://vinayakpatle:ZwBLjYypDjBmrpZE@cluster1.aun7s.mongodb.net/brainly');
+// here was the connection to the mongodb database
 
 app.post("/api/v1/signup",async (req,res)=>{
     // zod , password hashed,status for various checking
